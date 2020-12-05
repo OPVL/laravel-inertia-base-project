@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
+
+class Register extends FormRequest
+{
+    public function authorize(): bool
+    {
+        if (Auth::user() !== null)
+            return false;
+
+        return true;
+    }
+
+    public function rules(): array
+    {
+        return [
+            'firstName' => 'required|string',
+            'surname' => 'nullable|string',
+            'email' => 'email:rfc,dns|unique:users,email',
+        ];
+    }
+}
