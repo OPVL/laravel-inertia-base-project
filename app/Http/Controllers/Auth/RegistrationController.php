@@ -1,15 +1,12 @@
 <?php
 
-namespace App\Http\Auth\Controllers;
+namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Register;
 use Illuminate\Contracts\View\View;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
 
-class LoginController extends Controller
+class RegistrationController extends Controller
 {
     public function create(): View
     {
