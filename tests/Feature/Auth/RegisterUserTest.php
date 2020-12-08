@@ -11,7 +11,7 @@ class RegisterUserTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testExample(): void
+    public function will_register_and_login_from_valid_payload(): void
     {
         $response = $this->postJson(route('auth.register.store'), [
             'firstname' => 'Tester',
