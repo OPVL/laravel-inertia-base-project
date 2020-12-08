@@ -21,7 +21,12 @@
         "@inertiajs/inertia": "^0.7.0",
         "@inertiajs/inertia-react": "^0.4.4",
         "@inertiajs/progress": "^0.2.3",
+        "classnames": "^2.2.6",
+        "dayjs": "^1.9.7",
         "react": "^16.14.0",
-        "react-dom": "^16.14.0"
+        "react-day-picker": "^7.4.8",
+        "react-dom": "^16.14.0",
+        "sass": "^1.30.0",
+        "sass-loader": "^10.1.0"
     }
 }
