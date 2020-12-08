@@ -20,7 +20,8 @@ class Register extends FormRequest
         return [
             'firstName' => 'required|string',
             'surname' => 'nullable|string',
-            'email' => 'email:rfc,dns|unique:users,email',
+            'email' => 'email|unique:users,email',
+            'password' => 'required|string|min:8',
         ];
     }
 }
